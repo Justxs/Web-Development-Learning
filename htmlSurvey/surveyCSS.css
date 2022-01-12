@@ -1,0 +1,49 @@
+footer {
+  font-family: Roboto;
+  width: 500px;
+  margin: auto;
+  background-color: #f8fbfc;
+  border-radius: 10px;
+  border: 5px solid lightcyan;
+}
+body {
+  background-color: #dcebf2;
+  font-family: roboto;
+  background: url("https://www.ionos.co.uk/digitalguide/fileadmin/DigitalGuide/Teaser/code-editoren-t.jpg")
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+#title {
+  text-align: center;
+}
+#description {
+  text-align: center;
+}
+#survey-form {
+  padding: 20px;
+  margin: 25px auto;
+  position: relative;
+  width: 400px;
+  border: 5px solid lightcyan;
+  background-color: #f8fbfc;
+  border-radius: 10px;
+}
+#submit {
+  padding: 10px;
+  width: 375px;
+  color: darkgreen;
+  background-color: lightcyan;
+  border: 1px solid cyan;
+  font-weight: bold;
+}
+#submit:hover {
+  border: 1px solid green;
+  background-color: lightgreen;
+}
+textarea {
+  resize: none;
+  width: 369px;
+}

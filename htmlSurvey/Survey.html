@@ -1,0 +1,82 @@
+<!--
+Just a random site for learning input fields in html
+freeCodeCamp
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Registration site</title>
+    <link href="surveyCSS.css" rel="stylesheet" type="text/css"/>
+</head>
+<footer>
+  <h1 id="title">Registration form</h1>
+  <p id="description">A registration form created for getting better in HTML and CSS</p>
+</footer>
+
+<body>
+  <div>
+    <form id="survey-form">
+      <label id="name-label" for="name">Name</label><br>
+      <input type="text" id="name" name="name" size="50" placeholder="Enter your name" required><br>
+      <br>
+      <label id="email-label" for="email">Email</label><br>
+      <input type="email" id="email" name="email" size="50" placeholder="Enter your email" required><br>
+      <br>
+      <label id="number-label" for="number">Age(optional)</label><br>
+      <input type="number" id="number" name="number" min="8" max="98" placeholder="Age"><br>
+      <br>
+      <label id="dropdown" for="dropdown">In which field are you working now?</label><br>
+      <select type="dropdown" id="dropdown" name="dropdown" required><br>
+        <optgroup label="Web developer">
+          <option value="Fullstack-dev">Fullstack</option>
+          <option value="Frontend-dev">Frontend</option>
+          <option value="Backend-dev">Backend</option>
+        </optgroup>
+        <optgroup label="Other">
+          <option value="Tester">Quality assurance</option>
+          <option value="Other">Other</option>
+        </optgroup>
+      </select>
+      <br>
+      <br>
+      <label id="radio" for="radio">Which C language is your favorite:</label><br>
+
+        <input type="radio" id="Cs" name="tech" value="Cs">
+        <label for="Cs">C#</label><br>
+
+        <input type="radio" id="cpp" name="tech" value="CPP">
+        <label for="cpp">C++</label><br>
+
+        <input type="radio" id="c" name="tech" value="C">
+        <label for="c">C</label><br>
+      <br>
+      <label id="checkbox" for="checkbox">Which programing languages do you want to learn:</label><br>
+
+        <input type="checkbox" id="Cs1" name="techToLearn" value="Cs">
+        <label for="Cs1">C#</label><br>
+
+        <input type="checkbox" id="cPP" name="techToLearn" value="CPP">
+        <label for="cPP">C++</label><br>
+
+        <input type="checkbox" id="python" name="techToLearn" value="python">
+        <label for="python">Python</label><br>
+
+        <input type="checkbox" id="java" name="techToLearn" value="java">
+        <label for="java">Java</label><br>
+
+        <input type="checkbox" id="rust" name="techToLearn" value="rust">
+        <label for="rust">Rust</label><br>
+
+        <input type="checkbox" id="javascript" name="techToLearn" value="javascript">
+        <label for="javascript">JavaScript</label><br>
+      <br>
+      <label id="textarea" for="textarea">Additional comments:</label><br>
+      <textarea id="TextArea" name="textarea" rows="4" cols="50">Additional comments
+  </textarea>
+      <input type="submit" id="submit" name="submit" size="40"><br>
+    </form>
+  </div>
+</body>
+
+</html>
