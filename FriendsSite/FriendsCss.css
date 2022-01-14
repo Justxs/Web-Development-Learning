@@ -1,0 +1,82 @@
+#header {
+  background-color: rgba(255, 136, 17, 0.9);
+
+  padding: 5px;
+  display: flex;
+  font-family: Lato;
+  margin-bottom: 50px;
+  position: sticky;
+  top: 0px;
+  z-index: 1;
+}
+#header-img {
+  height: 40px;
+  padding: 1em;
+}
+#nav-bar {
+  margin: auto 0 auto auto;
+}
+.nav-link {
+  border-radius: 10px;
+  padding: 15px;
+  color: #392f5a;
+  text-decoration: none;
+  background-color: #9dd9d2;
+}
+li {
+  display: inline;
+  padding: 50px;
+  font-size: 20px;
+}
+.nav-link:hover {
+  background-color: #fff8f0;
+}
+#video {
+  width: 560px;
+  height: 315px;
+}
+#main {
+  position: relative;
+  width: 800px;
+  margin: auto;
+  background-color: #9dd9d2;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+}
+#white {
+  background-color: #fff8f0;
+  border-radius: 10px;
+  padding: 10px;
+}
+#formBox,
+#story {
+  padding: 100px;
+}
+body {
+  background-color: #f4d06f;
+  color: #392f5a;
+  font-family: Lato;
+}
+#email-label {
+  font-size: 20px;
+  font-weight: bold;
+}
+#submit {
+  border: none;
+  background-color: #ff8811;
+  font-size: 20px;
+  border-radius: 10px;
+  padding: 15px;
+}
+#submit:hover {
+  background-color: #f4d06f;
+}
+p {
+  font-size: 20px;
+}
+@media only screen and (max-width: 1000px) {
+  li {
+    display: none;
+  }
+}
