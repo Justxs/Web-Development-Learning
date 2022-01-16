@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+<title>C# Documentation</title>
+  <link href="DocumentationCss.css" rel="stylesheet" type="text/css"/>
+<head>
+</head>
+
+<body>
+
+  <main id="main-doc">
+    <nav id="navbar">
+      <header>
+        <h1>C# Documentation</h1>
+      </header>
+      <ul id="navlist">
+        <li><a class="nav-link" href="#Introduction">Introduction</a></li><br>
+        <li><a class="nav-link" href="#.net">.Net</a></li><br>
+        <li><a class="nav-link" href="#hello_world">Hello World</a></li><br>
+        <li><a class="nav-link" href="#Variables">Variables</a></li><br>
+        <li><a class="nav-link" href="#Types_and_members">Types and members</a></li><br>
+      </ul>
+    </nav>
+    <section class="main-section" id="Introduction">
+      <header><h1>Introduction</h1>
+      </header>
+      <p>C# (pronounced "See Sharp") is a modern, object-oriented, and type-safe programming language.</p>
+      <p> C# enables developers to build many types of secure and robust applications that run in .NET. C# has its roots in the C family of languages and will be immediately familiar to C, C++, Java, and JavaScript programmers. This tour provides an overview of the major components of the language in C# 8 and earlier. If you want to explore the language through interactive examples, try the introduction to C# tutorials.</p>
+      <p>C# is an object-oriented, component-oriented programming language. C# provides language constructs to directly support these concepts, making C# a natural language in which to create and use software components. Since its origin, C# has added features to support new workloads and emerging software design practices. At its core, C# is an object-oriented language. You define types and their behavior.</p>
+      <p>Several C# features help create robust and durable applications. Garbage collection automatically reclaims memory occupied by unreachable unused objects. Nullable types guard against variables that don't refer to allocated objects. Exception handling provides a structured and extensible approach to error detection and recovery.</p>
+      <p>Lambda expressions support functional programming techniques. Language Integrated Query (LINQ) syntax creates a common pattern for working with data from any source. Language support for asynchronous operations provides syntax for building distributed systems.</p>
+      <p> C# has a unified type system. All C# types, including primitive types such as int and double, inherit from a single root <code>object</code> type.</p>
+      <p>All types share a set of common operations. Values of any type can be stored, transported, and operated upon in a consistent manner. Furthermore, C# supports both user-defined reference types and value types. C# allows dynamic allocation of objects and in-line storage of lightweight structures.</p>
+      <p>C# supports generic methods and types, which provide increased type safety and performance.</p>
+      <p>C# provides iterators, which enable implementers of collection classes to define custom behaviors for client code.</p>
+      <p>C# emphasizes versioning to ensure programs and libraries can evolve over time in a compatible manner. Aspects of C#'s design that were directly influenced by versioning considerations include the separate <code>virtual</code> and <code>override</code> modifiers, the rules for method overload resolution, and support for explicit interface member declarations.</p>
+    </section>
+
+    <section class="main-section" id=".net">
+      <header><h1>
+        .NET</h1>
+      </header>
+      <p>C# programs run on .NET, a virtual execution system called the common language runtime (CLR) and a set of class libraries.</p>
+      <p>The CLR is the implementation by Microsoft of the common language infrastructure (CLI), an international standard.</p>
+      <p>The CLI is the basis for creating execution and development environments in which languages and libraries work together seamlessly.</p>
+      <p>Source code written in C# is compiled into an intermediate language (IL) that conforms to the CLI specification. The IL code and resources, such as bitmaps and strings, are stored in an assembly, typically with an extension of .dll. An assembly contains a manifest that provides information about the assembly's types, version, and culture.</p>
+      <p>When the C# program is executed, the assembly is loaded into the CLR. The CLR performs Just-In-Time (JIT) compilation to convert the IL code to native machine instructions. The CLR provides other services related to automatic garbage collection, exception handling, and resource management. Code that's executed by the CLR is sometimes referred to as "managed code." "Unmanaged code," is compiled into native machine language that targets a specific platform.</p>
+      <p>Language interoperability is a key feature of .NET. IL code produced by the C# compiler conforms to the Common Type Specification (CTS). IL code generated from C# can interact with code that was generated from the .NET versions of F#, Visual Basic, C++.</p>
+      <p>There are more than 20 other CTS-compliant languages. A single assembly may contain multiple modules written in different .NET languages. The types can reference each other as if they were written in the same language.</p>
+      <p>In addition to the run time services, .NET also includes extensive libraries. These libraries support many different workloads. They're organized into namespaces that provide a wide variety of useful functionality. </p>
+      <p>The libraries include everything from file input and output to string manipulation to XML parsing, to web application frameworks to Windows Forms controls.</p>
+      <p>The typical C# application uses the .NET class library extensively to handle common "plumbing" chores.</p>
+    </section>
+
+    <section class="main-section" id="hello_world">
+      <header><h1>Hello world</h1>
+      </header>
+      <p>The "Hello, World" program is traditionally used to introduce a programming language. Here it is in C#:</p>
+      <code id="hw">using System;<br>class Hello<br> <br>static void Main()<br>{<br>Console.WriteLine("Hello, World");<br>}<br>}</code>
+      <p>The "Hello, World" program starts with a <code>using</code> directive that references the <code>System</code> namespace.</p>
+      <p>Namespaces provide a hierarchical means of organizing C# programs and libraries. </p>
+      <p>Namespaces contain types and other namespaces — for example, the <code>System</code> namespace contains a number of types, such as the <code>Console</code> class referenced in the program, and a number of other namespaces, such as <code>IO</code> and <code>Collections</code>.</p>
+      <p>A <code>using</code> directive that references a given namespace enables unqualified use of the types that are members of that namespace.</p>
+      <p>Because of the <code>using</code> directive, the program can use <code>Console.WriteLine</code> as shorthand for <code>System.Console.WriteLine.</code></p>
+      <p>The Hello class declared by the "Hello, World" program has a single member, the method named Main. The Main method is declared with the static modifier. </p>
+      <p>While instance methods can reference a particular enclosing object instance using the keyword this, static methods operate without reference to a particular object. By convention, a static method named Main serves as the entry point of a C# program.</p>
+      <p>The output of the program is produced by the WriteLine method of the Console class in the System namespace.</p>
+      <p>This class is provided by the standard class libraries, which, by default, are automatically referenced by the compiler.</p>
+    </section>
+
+    <section class="main-section" id="Variables">
+      <header><h1>Variables</h1></header>
+      <p>A type defines the structure and behavior of any data in C#. The declaration of a type may include its members, base type, interfaces it implements, and operations permitted for that type. A variable is a label that refers to an instance of a specific type.</p>
+      <p>There are two kinds of types in C#: value types and reference types. Variables of value types directly contain their data. Variables of reference types store references to their data, the latter being known as objects. With reference types, it's possible for two variables to reference the same object and possible for operations on one variable to affect the object referenced by the other variable. With value types, the variables each have their own copy of the data, and it isn't possible for operations on one to affect the other (except for ref and out parameter variables).</p>
+      <p>An identifier is a variable name. An identifier is a sequence of unicode characters without any whitespace. An identifier may be a C# reserved word, if it's prefixed by @. Using a reserved word as an identifier can be useful when interacting with other languages.</p>
+      <p>C#'s value types are further divided into simple types, enum types, struct types, nullable value types, and tuple value types. C#'s reference types are further divided into class types, interface types, array types, and delegate types.</p>
+      <p>C# programs use type declarations to create new types. A type declaration specifies the name and the members of the new type. Six of C#'s categories of types are user-definable: class types, struct types, interface types, enum types, delegate types, and tuple value types. You can also declare record types, either record struct, or record class. Record types have compiler-synthesized members. You use records primarily for storing values, with minimal associated behavior.</p>
+      <ul>
+        <li>A class type defines a data structure that contains data members (fields) and function members (methods, properties, and others). Class types support single inheritance and polymorphism, mechanisms whereby derived classes can extend and specialize base classes.</li>
+        <li>A struct type is similar to a class type in that it represents a structure with data members and function members. However, unlike classes, structs are value types and don't typically require heap allocation. Struct types don't support user-specified inheritance, and all struct types implicitly inherit from type object.</li>
+        <li>An interface type defines a contract as a named set of public members. A class or struct that implements an interface must provide implementations of the interface's members. An interface may inherit from multiple base interfaces, and a class or struct may implement multiple interfaces.</li>
+        <li>A delegate type represents references to methods with a particular parameter list and return type. Delegates make it possible to treat methods as entities that can be assigned to variables and passed as parameters. Delegates are analogous to function types provided by functional languages. They're also similar to the concept of function pointers found in some other languages. Unlike function pointers, delegates are object-oriented and type-safe.</li>
+        <li>The class, struct, interface, and delegate types all support generics, whereby they can be parameterized with other types.</li>
+      </ul>
+      <p>C# supports single-dimensional and multi-dimensional arrays of any type. Unlike the types listed above, array types don't have to be declared before they can be used. Instead, array types are constructed by following a type name with square brackets. For example, int[] is a single-dimensional array of int, int[,] is a two-dimensional array of int, and int[][] is a single-dimensional array of single-dimensional arrays, or a "jagged" array, of int.</p>
+      <p>Nullable types don't require a separate definition. For each non-nullable type T, there's a corresponding nullable type T?, which can hold an additional value, null. For instance, int? is a type that can hold any 32-bit integer or the value null, and string? is a type that can hold any string or the value null.</p>
+      <p>C#'s type system is unified such that a value of any type can be treated as an object. Every type in C# directly or indirectly derives from the object class type, and object is the ultimate base class of all types. Values of reference types are treated as objects simply by viewing the values as type object. Values of value types are treated as objects by performing boxing and unboxing operations. In the following example, an int value is converted to object and back again to int.</p>
+      <p>When a value of a value type is assigned to an object reference, a "box" is allocated to hold the value. That box is an instance of a reference type, and the value is copied into that box. Conversely, when an object reference is cast to a value type, a check is made that the referenced object is a box of the correct value type. If the check succeeds, the value in the box is copied to the value type.</p>
+      <p>C#'s unified type system effectively means that value types are treated as object references "on demand." Because of the unification, general-purpose libraries that use type object can be used with all types that derive from object, including both reference types and value types.</p>
+    </section>
+
+    <section class="main-section" id="Types_and_members">
+      <header>
+        <h1>Types and members</h1>
+      </header>
+      <p>As an object-oriented language, C# supports the concepts of encapsulation, inheritance, and polymorphism. A class may inherit directly from one parent class, and it may implement any number of interfaces. Methods that override virtual methods in a parent class require the override keyword as a way to avoid accidental redefinition. In C#, a struct is like a lightweight class; it's a stack-allocated type that can implement interfaces but doesn't support inheritance. C# provides record class, and record struct types which are types whose purpose is primarily storing data values.</p>
+      <p>Classes and objects</p>
+      <p>Classes are the most fundamental of C#’s types. A class is a data structure that combines state (fields) and actions (methods and other function members) in a single unit. A class provides a definition for instances of the class, also known as objects. Classes support inheritance and polymorphism, mechanisms whereby derived classes can extend and specialize base classes.</p>
+      <p>New classes are created using class declarations. A class declaration starts with a header. The header specifies:</p>
+      <ul>
+        <li>The attributes and modifiers of the class</li>
+        <li>The name of the class</li>
+        <li>The base class (when inheriting from a base class)</li>
+        <li>The interfaces implemented by the class.</li>
+      </ul>
+      <p>The header is followed by the class body, which consists of a list of member declarations written between the delimiters { and }.</p>
+      <p>Variables of any type may be declared as non-nullable or nullable.</p>
+      <p>A nullable variable can hold an additional null value, indicating no value.</p>
+      <p>Nullable Value types (structs or enums) are represented by System.Nullable.</p>
+      <p>Non-nullable and Nullable Reference types are both represented by the underlying reference type.</p>
+      <p>The distinction is represented by metadata read by the compiler and some libraries. The compiler provides warnings when nullable references are dereferenced without first checking their value against null. The compiler also provides warnings when non-nullable references are assigned a value that may be null. The following example declares a nullable int, initializing it to null. Then, it sets the value to 5. It demonstrates the same concept with a nullable string. For more information, see nullable value types and nullable reference types.</p>
+    </section>
+  </main>
+
+</body>
+
+</html>

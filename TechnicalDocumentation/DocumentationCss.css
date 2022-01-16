@@ -1,0 +1,46 @@
+#main-doc{
+margin-left: 350px;
+}
+#navbar{
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  padding: 15px;
+  border: 5px solid gray;
+
+}
+.nav-link{
+  font-size: 20px;
+  text-decoration: none;
+  color: black;
+
+
+}
+#navlist{
+  list-style-type: none;
+}
+a:hover{
+  color: darkblue;
+}
+.main-section{
+
+}
+#hw{
+  font-family: Consolas,"courier new";
+  color: crimson;
+  background-color: #f1f1f1;
+  padding: 2px;
+  font-size: 105%;
+}
+@media only screen and (max-width: 800px) {
+  #navbar{
+    display: none;
+  }
+  #main-doc{
+  margin-left: 0px;
+  }
+}
