@@ -1,0 +1,32 @@
+body{
+    font-family: Lato, Arial, serif;
+    text-align: center;
+    background-color: #CFFFDC;
+}
+.title{
+    background-color: #93FFD8;
+    width: 300px;
+    margin: auto;
+    border-radius: 50px;
+    padding: 1px;
+}
+button{
+    background-color: #548CFF;
+    width: 150px;
+    height: 50px;
+    font-size: large;
+    font-weight: bold;
+    margin: 10px;
+    border: none;
+}
+button:hover{
+    background-color: #84DFFF;
+}
+
+textarea{
+    margin-top: 10px;
+    resize: none;
+    width: 70vw;
+    height: 500px;
+    font-size: 25px;
+}
