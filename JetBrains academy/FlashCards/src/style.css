@@ -1,0 +1,73 @@
+:root {
+    text-align: center;
+    font-family: Lato, serif;
+    font-weight: bold;
+}
+
+body {
+    background-image: url("source/world.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.countries {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    font-size: 30px;
+
+}
+
+.card {
+    position: relative;
+    transition: all 1s linear;
+    transform-style: preserve-3d;
+}
+
+.front,
+.back {
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+
+}
+
+.front {
+    background-color: red;
+    z-index: 3;
+    backface-visibility: hidden;
+}
+
+.back {
+    background-color: red;
+    z-index: 1;
+    transform: rotateY(180deg);
+
+}
+
+.country:hover  .card{
+
+    transform: rotateY(180deg);
+    display: flex;
+}
+
+.country {
+
+    height: 200px;
+    width: 200px;
+    margin: 10px;
+    position: relative;
+    z-index: 2;
+}
+
+
+.country {
+    perspective: 1000px;
+}

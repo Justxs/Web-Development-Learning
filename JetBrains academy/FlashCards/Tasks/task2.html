@@ -1,0 +1,40 @@
+<h5>  Description</h5>
+
+<p>Your flashcards look beautiful, but something important is still missing. The advantage of flashcards is that they contain answers on the back side so that you can check yourself. For each card, let's create the flip side with the answer (in our case, the capital), which will appear when the user hovers the cursor over the card.</p>
+
+<p>CSS animations are a lot of fun: they are beautiful and not too difficult to implement even for beginners. CSS provides a great variety of effects that you can choose from, and the best option for flashcards is probably flip animation.</p>
+
+<p>To implement the effect, you can either go through our explanation, watch the Youtube <a target="_blank" href="https://www.youtube.com/watch?v=SdC0DDdT_rM" rel="noopener noreferrer nofollow">tutorial on flipping card animation</a>, or do both.</p>
+
+<p><div class="alert alert-primary"> If you refer to the tutorial, note: for some browsers the code provided there may not work correctly. You might see the back inscription when the card is flipped; to fix this, add <code class="java">backface-visibility: hidden</code><em> </em>to the parent of the front and back divs. </div></p>
+
+<p>It's easy to understand how to make the flip animation if you imagine that you have to make a flashcard from three pieces of paper, which represent correspondent divs:</p>
+
+<p style="text-align: center;"><img alt="" height="248" src="https://ucarecdn.com/afb9ead0-249d-47ab-8b89-4627e8e565bd/" width="681"></p>
+
+<p>To glue the back side correctly, you need to flip it. Use the <code class="java">transform</code> property. The papers would look like this if you could see the text through the paper:</p>
+
+<p style="text-align: center;"><img alt="" height="248" src="https://ucarecdn.com/434105aa-cff5-453f-a01b-91eed8b56e1f/" width="681"></p>
+
+<p>Place all the layers in the correct order. You can use z-index for this.</p>
+
+<p style="text-align: center;"><img alt="" height="463" src="https://ucarecdn.com/96b4ae53-9d3d-4caa-af3a-168a86073fc5/" width="422"></p>
+
+<p>It's easy to place papers one on top of the other, but it's a bit tricky with divs. Here, you will need to work with positioning and the <code class="java">backface-visibility</code> property.<br>
+ </p>
+
+<p style="text-align: center;"><img alt="" height="267" src="https://ucarecdn.com/724889b7-6a94-4143-8f37-befe8981909f/" width="328"></p>
+
+<p>You can flip the resulting paper card by hand, but for virtual cards, you'll use a cursor. Wrap your card in a container div and implement the logic: if you hover on the container, the card inside will be flipped. Here, you will need to work with the properties <code class="java">transition</code> and <code class="java">transform</code>.</p>
+
+<p>Finally, add styles to the back side of your flashcards, and you are all set!</p>
+
+<h5>Objectives</h5>
+
+<p>Make the answer on the back side appear when the user hovers over the card.</p>
+
+<h5>Example</h5>
+
+<p>The final result of your project will look something like this:</p>
+
+<p><img alt="" src="https://ucarecdn.com/170970bc-f84f-4631-b53f-75357f3f7099/"></p>
