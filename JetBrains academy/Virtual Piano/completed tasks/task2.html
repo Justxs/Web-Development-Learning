@@ -1,0 +1,42 @@
+<h5>Description</h5>
+
+<p>If you have a feeling that something is still missing, you're right: a piano has more than just white keys. Create five black keys in the HTML document body using the <code class="java">&lt;kbd&gt;</code> tag and bind them to the <a target="_blank" href="https://stepik.org/media/attachments/lesson/315625/black_keys.zip" rel="noopener noreferrer nofollow">corresponding sounds</a>.</p>
+
+<p>Use letters <code class="java">W</code>, <code class="java">E</code>, <code class="java">T</code>, <code class="java">Y</code>, and <code class="java">U</code> for the black keys and position them the way they normally look on a real musical instrument.</p>
+
+<p>To accomplish this, you need to slightly change the code you've already written and add new styles, taking into account the following:</p>
+
+<ol>
+	<li>You already have styles applied to the keys. To prevent conflict of existing and future properties, wrap the <code class="java">&lt;kbd&gt;</code> tags responsible for the white keys in the <code class="java">&lt;div&gt;</code> tag with the <code class="java">white-keys</code> class. Then, open the CSS file and change the <code class="java">kbd</code> selector to <code class="java">.white-keys kbd</code>. Now, it does not refer to all the <code class="java">&lt;kbd&gt; </code>tags but only those tags that have the <code class="java">white-keys</code> class. Check that the application doesn't crash after the edits and still displays the same view.</li>
+	<li>Wrap your black keys in the <code class="java">&lt;div&gt;</code> tag with the class <code class="java">black-keys</code>. </li>
+	<li>Apply properties to the <code class="java">.black-keys kbd</code> selector to make the new keys black-colored.</li>
+	<li>Place the black keys on top of the white keys and resize the black keys, remembering to set the <code class="java">display</code> property to <code class="java">inline-block</code> value.</li>
+	<li>Change the color of the letters on the black keys. You can also change the font, size, and formatting styles of the text if you want.</li>
+</ol>
+
+<p><div class="alert alert-primary">Use <code class="java"><span style="color: #000000;">class</span></code> or <code class="java">id</code> attributes for the keys to which you want to set unique styles, for example, the location styles.</div></p>
+
+<p>Congratulations, now you have a new project for your portfolio! <br>
+<br>
+After passing this stage, you can continue to develop and improve the project yourself. You can draw the body of the piano, add animation when pressing keys, increase the number of keys or alter the sounds they make. You can also learn CSS Flexbox or CSS Grid, arrays, template literals, and other JS features that will help make your code shorter, cleaner and more readable. Good luck!</p>
+
+<p><div class="alert alert-danger">This project has been updated. If you have problems, please delete <code class="java">node_modules</code> folder in your project folder, open <code class="java">Terminal</code> window in <code class="java">WebStorm</code> and run <code class="java">npm install</code>. If that doesn't help, run <code class="java">npm cache clean --force</code> and reinstall <code class="java">node_modules</code> folder again.</div></p>
+
+<h5>Objectives</h5>
+
+<ol>
+	<li>Add 5 <code class="java">&lt;kbd&gt;</code> tags to the HTML document body that will be responsible for the black keys:  <code class="java">W</code>, <code class="java">E</code>, <code class="java">T</code>, <code class="java">Y</code>, and <code class="java">U</code>.</li>
+	<li>Create event handlers that play audio when keys with these characters are pressed.</li>
+	<li>Wrap all the white keys in one <code class="java">&lt;div&gt;</code> tag with the class <code class="java">white-keys</code>. </li>
+	<li>Wrap all the black keys in one  <code class="java">&lt;div&gt;</code> tag with the class <code class="java">black-keys</code>. </li>
+	<li>Set the color of the black keys to black.</li>
+	<li>Resize the black keys, remembering to set the <code class="java">display</code> property to <code class="java">inline-block</code> value.</li>
+	<li>Change the location of the black keys using positioning properties.</li>
+	<li>Change the color of the letters displayed on the black keys.</li>
+</ol>
+
+<h5>Example</h5>
+
+<p><em>Example result after completing this stage</em></p>
+
+<p style="text-align: center;"><img alt="" src="https://ucarecdn.com/f7a62af7-f136-470c-8aa6-06813e85342d/"></p>
