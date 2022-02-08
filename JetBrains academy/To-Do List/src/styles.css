@@ -1,0 +1,49 @@
+.title, .main {
+    display: flex;
+    justify-content: center;
+    font-family: Lato, serif;
+}
+
+#task-list {
+    width: 300px;
+    line-height: 1.8;
+    list-style-type: none;
+    padding-left: 0;
+}
+
+#add-task-button {
+    color: white;
+    background-color: aqua;
+    border: none;
+    height: 35px;
+}
+
+#add-task-button:hover {
+    background-color: blue;
+}
+
+#input-task {
+    border: none;
+    border-bottom: 2px solid aqua;
+    width: 220px;
+}
+
+#input-task:focus {
+    outline: none;
+}
+
+.delete-btn {
+    color: white;
+    background-color: red;
+    border: none;
+    border-radius: 50%;
+    height: 20px;
+    float: right;
+}
+
+.delete-btn:hover {
+    background-color: lightcoral;
+}
+
+
+
